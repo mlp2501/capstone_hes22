@@ -32,7 +32,7 @@ def PnL(position_table, return_table, points_table, number_of_pairs, x_date, ret
             Max_drawdown = max_diff
     
     # Annulized return
-    year_ret = (PnL_Accum_Table.sum()[-1]/len(PnL_Accum_Table.sum())) * (12**0.5)
+    year_ret = (PnL_Accum_Table.sum()[-1]/len(PnL_Accum_Table.sum())) * 12
     
     # Annulized vol
     PnL_Annul_Vol = PnL_Monthly_Vol * (12**0.5)
