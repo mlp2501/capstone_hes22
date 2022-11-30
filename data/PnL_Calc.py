@@ -40,7 +40,7 @@ def PnL(position_table, return_table, points_table, number_of_pairs, x_date, ret
             Max_drawdown = max_diff
     
     # Annulized return
-    year_ret = (PnL_Accum_Table.sum()[-1]/len(PnL_Accum_Table.sum())) * 12
+    year_ret = (PnL_Accum_Table.sum()[-1]/len(PnL_Accum_Table.sum())) * (12)
     
     # Annulized vol
     PnL_Annul_Vol = PnL_Monthly_Vol * (12**0.5)
@@ -70,7 +70,7 @@ def PnL(position_table, return_table, points_table, number_of_pairs, x_date, ret
             Max_drawdown_Train = max_diff
     
     # Annulized return
-    year_ret_Train = (PnL_Accum_Table_Train.sum()[-1]/len(PnL_Accum_Table_Train.sum())) * 12
+    year_ret_Train = (PnL_Accum_Table_Train.sum()[-1]/len(PnL_Accum_Table_Train.sum())) * (12)
     
     # Annulized vol
     PnL_Annul_Vol_Train = PnL_Monthly_Vol_Train * (12**0.5)
@@ -100,7 +100,7 @@ def PnL(position_table, return_table, points_table, number_of_pairs, x_date, ret
             Max_drawdown_Test = max_diff
     
     # Annulized return
-    year_ret_Test = (PnL_Accum_Table_Test.sum()[-1]/len(PnL_Accum_Table_Test.sum())) * 12
+    year_ret_Test = (PnL_Accum_Table_Test.sum()[-1]/len(PnL_Accum_Table_Test.sum())) * (12)
     
     # Annulized vol
     PnL_Annul_Vol_Test = PnL_Monthly_Vol_Test * (12**0.5)
